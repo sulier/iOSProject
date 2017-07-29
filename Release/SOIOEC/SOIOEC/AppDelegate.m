@@ -18,13 +18,7 @@
 #import "ZLCTabBarController.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import "SudokuViewController.h"
-static NSString *QQ_Umeng_redirectUrl = @"http://mobile.umeng.com/social";
-static NSString *Sina_Umeng_redirectUrl = @"https://sns.whalecloud.com/sina2/callback";
-static NSString *Umeng_AppKey = @"5955c57882b6356a050017dc";
-static NSString *QQ_AppID = @"1106257172";
-static NSString *QQ_AppKey = @"VbGI4fUvvNKnpTZ5";
-static NSString *Sina_AppID = @"4071289178";
-static NSString *Sina_AppSecret = @"4d67d453b149200d2983576b1861daf2";
+
 typedef int(^LauncheFinishedBlock)();
 
 
