@@ -11,7 +11,7 @@
 #pragma mark - WTSudokuView
 
 @class WTTouchView;
-@interface WTSudokuView : UIView
+@interface ZLCSudokuView : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame;
 
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, WTSudokuButtonType) {
     WTSudokuButtonTypeError
 };
 
-@interface WTSudokuButton : UIView
+@interface ZLCSudokuButton : UIView
 
 - (instancetype)initWithFrame:(CGRect)frame;
 

@@ -37,8 +37,6 @@ static NSString *searchRecordCell = @"cell";
              [weakSelf.searchField resignFirstResponder];
              [weakCover setHidden:YES];
          };
-//        [_coverView setHidden:YES];
-        
     }
     return _coverView;
 }
@@ -147,7 +145,6 @@ static NSString *searchRecordCell = @"cell";
     return hisView;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    isSearching = YES;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     self.searchField.text = self.myMutableArray[self.myMutableArray.count-1-indexPath.row];
     searchResults(self.searchField.text);
@@ -255,7 +252,6 @@ static NSString *searchRecordCell = @"cell";
     
     self.myMutableArray = myMutableArray;
     [self.tableView reloadData];
-    NSLog(@"myArray======%@",myArray);
 }
 
 

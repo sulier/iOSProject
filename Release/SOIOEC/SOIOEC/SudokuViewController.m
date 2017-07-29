@@ -8,12 +8,12 @@
 
 
 #import "SudokuViewController.h"
-#import "WTSudokuView.h"
+#import "ZLCSudokuView.h"
 #import "KeychainItemWrapper.h"
 
 @interface SudokuViewController ()<WTTouchSettingDelegate,WTTouchVerifyDelegate>
 
-@property (nonatomic, strong) WTSudokuView *sudokuview;
+@property (nonatomic, strong) ZLCSudokuView *sudokuview;
 
 @property (nonatomic, copy) NSString *tempPassword;
 
@@ -46,7 +46,7 @@
 }
 
 - (void)setting{
-     sudokuview = [[WTSudokuView alloc]initWithFrame:self.view.bounds];
+     sudokuview = [[ZLCSudokuView alloc]initWithFrame:self.view.bounds];
     [sudokuview.touchView setType:WTTouchViewTypeSetting];
     sudokuview.touchView.settingDelegate = self;
     [sudokuview showTitle:@"设置您的手势密码"];
@@ -54,7 +54,7 @@
 }
 
 - (void)resetting{
-    sudokuview = [[WTSudokuView alloc]initWithFrame:self.view.bounds];
+    sudokuview = [[ZLCSudokuView alloc]initWithFrame:self.view.bounds];
     [sudokuview.touchView setType:WTTouchViewTypeVerify];
     sudokuview.touchView.verifyDelegate = self;
     [sudokuview showTitle:@"验证您的手势密码"];
@@ -62,7 +62,7 @@
 }
 
 - (void)verity{
-    sudokuview = [[WTSudokuView alloc]initWithFrame:self.view.bounds];
+    sudokuview = [[ZLCSudokuView alloc]initWithFrame:self.view.bounds];
     [sudokuview.touchView setType:WTTouchViewTypeVerify];
     sudokuview.touchView.verifyDelegate = self;
     [sudokuview showTitle:@"验证您的手势密码"];

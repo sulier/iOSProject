@@ -7,7 +7,7 @@
 //
 
 #import "WallPagesViewController.h"
-#import "WJItemsControlView.h"
+#import "ZLCItemsControlView.h"
 #import "NetWorkManager.h"
 #import "PrettyURLModel.h"
 #import "ValueModel.h"
@@ -25,7 +25,7 @@
 #import "ZLCErrorAlert.h"
 @interface WallPagesViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,KSPhotoBrowserDelegate>
 {
-    WJItemsControlView              *_itemControlView;
+    ZLCItemsControlView              *_itemControlView;
     MJRefreshNormalHeader           *header;
     MJRefreshAutoStateFooter        *footer;
 }
@@ -111,10 +111,10 @@ static NSString * const CellId = @"shop";
     [self.view addSubview:scroll];
     
     //头部控制的segMent
-    WJItemsConfig *config = [[WJItemsConfig alloc]init];
+    ZLCItemsConfig *config = [[ZLCItemsConfig alloc]init];
     config.itemWidth = widht/4.0;
     
-    _itemControlView = [[WJItemsControlView alloc]initWithFrame:CGRectMake(0, 60-44, widht, 44)];
+    _itemControlView = [[ZLCItemsControlView alloc]initWithFrame:CGRectMake(0, 60-44, widht, 44)];
     _itemControlView.tapAnimation = YES;
     _itemControlView.config = config;
     NSMutableArray *titleArray = [[NSMutableArray alloc]init];

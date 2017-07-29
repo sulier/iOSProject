@@ -1,15 +1,14 @@
-//
-//  WJItemsControlView.m
-//  SliderSegment
-//
-//  Created by silver on 15/11/3.
-//  Copyright (c) 2015年 Fsilver. All rights reserved.
-//
 
-#import "WJItemsControlView.h"
+//  WJItemsControlView.h
+//  SOIOEC
+//
+//  Created by sulier_J on 2017/6/24.
+//  Copyright © 2017年 sulier_J. All rights reserved.
+//
+#import "ZLCItemsControlView.h"
 
 
-@implementation WJItemsConfig
+@implementation ZLCItemsConfig
 
 -(id)init
 {
@@ -18,8 +17,6 @@
         
         _itemWidth = 0;
         _itemFont = [UIFont boldSystemFontOfSize:16];
-//        _textColor = [UIColor blackColor];
-//        _selectedColor = [UIColor blackColor];
         _textColor = [UIColor colorWithRed:142/255.0 green:142/255.0 blue:142/255.0 alpha:1];
         _selectedColor = [UIColor colorWithRed:61/255.0 green:209/255.0 blue:165/255.0 alpha:1];
         _linePercent = 0.8;
@@ -31,7 +28,7 @@
 @end
 
 
-@interface WJItemsControlView()
+@interface ZLCItemsControlView()
 
 @property(nonatomic,strong)UIView *line;
 
@@ -39,7 +36,7 @@
 @end
 
 
-@implementation WJItemsControlView
+@implementation ZLCItemsControlView
 
 -(id)initWithFrame:(CGRect)frame
 {

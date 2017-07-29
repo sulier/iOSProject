@@ -7,7 +7,7 @@
 //
 
 #import "EnshiredController.h"
-#import "WJItemsControlView.h"
+#import "ZLCItemsControlView.h"
 #import "NetWorkManager.h"
 #import "MJExtension.h"
 #import "MJRefresh.h"
@@ -26,7 +26,7 @@
 #import "ZLCWaterflowLayout.h"
 @interface EnshiredController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,KSPhotoBrowserDelegate,YFWaterflowLayoutDelegate>
 {
-    WJItemsControlView              *_itemControlView;
+    ZLCItemsControlView              *_itemControlView;
     MJRefreshNormalHeader           *header;
     MJRefreshAutoStateFooter        *footer;
     ZLCWaterflowLayout               *layoutWallpaper;
@@ -147,10 +147,10 @@ static NSString * const CellId = @"shop";
     [self.view addSubview:scroll];
     
     //头部控制的segMent
-    WJItemsConfig *config = [[WJItemsConfig alloc]init];
+    ZLCItemsConfig *config = [[ZLCItemsConfig alloc]init];
     config.itemWidth = widht/3.0;
     
-    _itemControlView = [[WJItemsControlView alloc]initWithFrame:CGRectMake(0, 60, widht, 44)];
+    _itemControlView = [[ZLCItemsControlView alloc]initWithFrame:CGRectMake(0, 60, widht, 44)];
     _itemControlView.tapAnimation = YES;
     _itemControlView.config = config;
     _itemControlView.titleArray = self.titles;

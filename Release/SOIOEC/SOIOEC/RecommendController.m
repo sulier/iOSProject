@@ -19,11 +19,6 @@
 #import "KSPhotoBrowser.h"
 #import "IPhoneRelates.h"
 #import "GlobalMacroDefinition.h"
-//#import "RGCardLayoutViewController.h"
-
-//static NSString *recommmentText = @"高清性感美女";
-//static NSString *recommmentText = @"高清iPhone6手机壁纸";
-static long      limitMinSize   = 100*1000;
 
 @interface RecommendController ()<UICollectionViewDelegate,UICollectionViewDataSource,YFWaterflowLayoutDelegate,KSPhotoBrowserDelegate>
 {

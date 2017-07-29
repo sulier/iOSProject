@@ -61,9 +61,9 @@
 		551A67D81F073CCF008D3B99 /* SudokuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D21F073CCF008D3B99 /* SudokuViewController.m */; };
 		551A67D91F073CCF008D3B99 /* SudokuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D21F073CCF008D3B99 /* SudokuViewController.m */; };
 		551A67DA1F073CCF008D3B99 /* SudokuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D21F073CCF008D3B99 /* SudokuViewController.m */; };
-		551A67DB1F073CCF008D3B99 /* WTSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D41F073CCF008D3B99 /* WTSudokuView.m */; };
-		551A67DC1F073CCF008D3B99 /* WTSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D41F073CCF008D3B99 /* WTSudokuView.m */; };
-		551A67DD1F073CCF008D3B99 /* WTSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D41F073CCF008D3B99 /* WTSudokuView.m */; };
+		551A67DB1F073CCF008D3B99 /* ZLCSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D41F073CCF008D3B99 /* ZLCSudokuView.m */; };
+		551A67DC1F073CCF008D3B99 /* ZLCSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D41F073CCF008D3B99 /* ZLCSudokuView.m */; };
+		551A67DD1F073CCF008D3B99 /* ZLCSudokuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 551A67D41F073CCF008D3B99 /* ZLCSudokuView.m */; };
 		551A67DF1F073D2F008D3B99 /* GesturePasswordBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 551A67DE1F073D2F008D3B99 /* GesturePasswordBackground.png */; };
 		551A67E01F073D2F008D3B99 /* GesturePasswordBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 551A67DE1F073D2F008D3B99 /* GesturePasswordBackground.png */; };
 		551A67E11F073D2F008D3B99 /* GesturePasswordBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 551A67DE1F073D2F008D3B99 /* GesturePasswordBackground.png */; };
@@ -84,7 +84,7 @@
 		5577DD6E1EFF51550083AF85 /* searchlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5577DD6D1EFF51550083AF85 /* searchlist.plist */; };
 		5577DD6F1EFF51550083AF85 /* searchlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5577DD6D1EFF51550083AF85 /* searchlist.plist */; };
 		5577DD701EFF51550083AF85 /* searchlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5577DD6D1EFF51550083AF85 /* searchlist.plist */; };
-		5578CE151EFB677000293030 /* WJItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578CE141EFB677000293030 /* WJItemsControlView.m */; };
+		5578CE151EFB677000293030 /* ZLCItemsControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578CE141EFB677000293030 /* ZLCItemsControlView.m */; };
 		5578CE181EFB6E2E00293030 /* CatogoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578CE171EFB6E2E00293030 /* CatogoryModel.m */; };
 		5578CE191EFB6E2E00293030 /* CatogoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578CE171EFB6E2E00293030 /* CatogoryModel.m */; };
 		5578CE1A1EFB6E2E00293030 /* CatogoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578CE171EFB6E2E00293030 /* CatogoryModel.m */; };
@@ -107,7 +107,6 @@
 		55DF14921EEEE3FF006C5644 /* UIImage+PECrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DF14841EEEE3FF006C5644 /* UIImage+PECrop.m */; };
 		55DF14931EEEE3FF006C5644 /* UIImage+PECrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 55DF14841EEEE3FF006C5644 /* UIImage+PECrop.m */; };
 		55F4EF841ED7017600317556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F4EF831ED7017600317556 /* main.m */; };
-		55F4EF8A1ED7017600317556 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F4EF891ED7017600317556 /* ViewController.m */; };
 		55F4EF8D1ED7017700317556 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F4EF8B1ED7017700317556 /* Main.storyboard */; };
 		55F4EF901ED7017700317556 /* SOIOEC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55F4EF8E1ED7017700317556 /* SOIOEC.xcdatamodeld */; };
 		55F4EF951ED7017700317556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F4EF931ED7017700317556 /* LaunchScreen.storyboard */; };
@@ -250,8 +249,8 @@
 		551A67D01F073CCF008D3B99 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		551A67D11F073CCF008D3B99 /* SudokuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SudokuViewController.h; sourceTree = "<group>"; };
 		551A67D21F073CCF008D3B99 /* SudokuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SudokuViewController.m; sourceTree = "<group>"; };
-		551A67D31F073CCF008D3B99 /* WTSudokuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSudokuView.h; sourceTree = "<group>"; };
-		551A67D41F073CCF008D3B99 /* WTSudokuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSudokuView.m; sourceTree = "<group>"; };
+		551A67D31F073CCF008D3B99 /* ZLCSudokuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCSudokuView.h; sourceTree = "<group>"; };
+		551A67D41F073CCF008D3B99 /* ZLCSudokuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCSudokuView.m; sourceTree = "<group>"; };
 		551A67DE1F073D2F008D3B99 /* GesturePasswordBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GesturePasswordBackground.png; sourceTree = "<group>"; };
 		5529A7291EEAE89400F85DCB /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		5529A72F1EEAE96100F85DCB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -262,8 +261,8 @@
 		5577DD641EFF3EE80083AF85 /* RightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightCollectionViewCell.m; sourceTree = "<group>"; };
 		5577DD651EFF3EE80083AF85 /* RightCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightCollectionViewCell.xib; sourceTree = "<group>"; };
 		5577DD6D1EFF51550083AF85 /* searchlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = searchlist.plist; sourceTree = "<group>"; };
-		5578CE131EFB677000293030 /* WJItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJItemsControlView.h; sourceTree = "<group>"; };
-		5578CE141EFB677000293030 /* WJItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJItemsControlView.m; sourceTree = "<group>"; };
+		5578CE131EFB677000293030 /* ZLCItemsControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLCItemsControlView.h; sourceTree = "<group>"; };
+		5578CE141EFB677000293030 /* ZLCItemsControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLCItemsControlView.m; sourceTree = "<group>"; };
 		5578CE161EFB6E2E00293030 /* CatogoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatogoryModel.h; sourceTree = "<group>"; };
 		5578CE171EFB6E2E00293030 /* CatogoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatogoryModel.m; sourceTree = "<group>"; };
 		559613761EEC0E0500C89DE8 /* ZLCHaleyPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZLCHaleyPlugin.h; path = SOIOEC/ZLCHaleyPlugin.h; sourceTree = "<group>"; };
@@ -276,8 +275,6 @@
 		55F4EF7F1ED7017600317556 /* SOIOEC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SOIOEC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F4EF831ED7017600317556 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55F4EF851ED7017600317556 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		55F4EF881ED7017600317556 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		55F4EF891ED7017600317556 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		55F4EF8C1ED7017700317556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55F4EF8F1ED7017700317556 /* SOIOEC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SOIOEC.xcdatamodel; sourceTree = "<group>"; };
 		55F4EF941ED7017700317556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -469,19 +466,19 @@
 			name = ios;
 			sourceTree = "<group>";
 		};
-		5577DD6C1EFF513E0083AF85 /* Src */ = {
+		5577DD6C1EFF513E0083AF85 /* src */ = {
 			isa = PBXGroup;
 			children = (
 				5577DD6D1EFF51550083AF85 /* searchlist.plist */,
 			);
-			name = Src;
+			name = src;
 			sourceTree = "<group>";
 		};
 		5578CE121EFB674D00293030 /* 滑动segment */ = {
 			isa = PBXGroup;
 			children = (
-				5578CE131EFB677000293030 /* WJItemsControlView.h */,
-				5578CE141EFB677000293030 /* WJItemsControlView.m */,
+				5578CE131EFB677000293030 /* ZLCItemsControlView.h */,
+				5578CE141EFB677000293030 /* ZLCItemsControlView.m */,
 			);
 			name = "滑动segment";
 			sourceTree = "<group>";
@@ -512,12 +509,19 @@
 			children = (
 				DA7266AA1EF44E4C008C2895 /* FoundationController.h */,
 				DA7266AB1EF44E4C008C2895 /* FoundationController.m */,
+			);
+			name = bases;
+			sourceTree = "<group>";
+		};
+		55CBA9FA1F2D4B950097752A /* foundationvc */ = {
+			isa = PBXGroup;
+			children = (
 				DA7266BB1EF44F21008C2895 /* BaseMainViewController.h */,
 				DA7266BC1EF44F21008C2895 /* BaseMainViewController.m */,
 				DA7266B01EF44E9A008C2895 /* BaseNavigationController.h */,
 				DA7266B11EF44E9A008C2895 /* BaseNavigationController.m */,
 			);
-			name = bases;
+			name = foundationvc;
 			sourceTree = "<group>";
 		};
 		55D8EACB1EFE0EC2005E2FE6 /* srcs */ = {
@@ -560,10 +564,6 @@
 			children = (
 				55F4EF851ED7017600317556 /* AppDelegate.h */,
 				DA698CDC1EF8761A009F9CC9 /* AppDelegate.m */,
-				55F4EF881ED7017600317556 /* ViewController.h */,
-				55F4EF891ED7017600317556 /* ViewController.m */,
-				550E31FD1EEBBFD3000E6859 /* APPObject.h */,
-				550E31FE1EEBBFD3000E6859 /* APPObject.m */,
 				DA6F9F001EEF0E69009DA36F /* main */,
 				DA6F9EFE1EEF0E0B009DA36F /* unitiesAPIs */,
 				55F4EF8B1ED7017700317556 /* Main.storyboard */,
@@ -657,6 +657,8 @@
 		DA6F9EFE1EEF0E0B009DA36F /* unitiesAPIs */ = {
 			isa = PBXGroup;
 			children = (
+				550E31FD1EEBBFD3000E6859 /* APPObject.h */,
+				550E31FE1EEBBFD3000E6859 /* APPObject.m */,
 				55FBBFCF1EEEB33200524290 /* NetWorkManager.h */,
 				55FBBFD01EEEB33200524290 /* NetWorkManager.m */,
 				55FBBFB91EEEACF200524290 /* Nets */,
@@ -667,12 +669,12 @@
 		DA6F9F001EEF0E69009DA36F /* main */ = {
 			isa = PBXGroup;
 			children = (
-				DA7266861EF448A4008C2895 /* tab+Nav主框架 */,
+				DA7266861EF448A4008C2895 /* Tab+Nav+Subs */,
 			);
 			name = main;
 			sourceTree = "<group>";
 		};
-		DA7266861EF448A4008C2895 /* tab+Nav主框架 */ = {
+		DA7266861EF448A4008C2895 /* Tab+Nav+Subs */ = {
 			isa = PBXGroup;
 			children = (
 				55CBA9F51F2D18150097752A /* bases */,
@@ -681,7 +683,7 @@
 				DA72668A1EF448DD008C2895 /* models */,
 				DA7266891EF448D3008C2895 /* mainVC */,
 			);
-			name = "tab+Nav主框架";
+			name = "Tab+Nav+Subs";
 			sourceTree = "<group>";
 		};
 		DA7266891EF448D3008C2895 /* mainVC */ = {
@@ -714,8 +716,8 @@
 		DA72669A1EF44B6D008C2895 /* 搜索 */ = {
 			isa = PBXGroup;
 			children = (
-				5577DD6C1EFF513E0083AF85 /* Src */,
-				DA72669E1EF44D4E008C2895 /* SearchRelVC */,
+				5577DD6C1EFF513E0083AF85 /* src */,
+				DA72669E1EF44D4E008C2895 /* searchvc */,
 				DA7266A61EF44DB2008C2895 /* Models */,
 				DA7266A21EF44D8F008C2895 /* Views */,
 			);
@@ -754,7 +756,7 @@
 			name = "更多";
 			sourceTree = "<group>";
 		};
-		DA72669E1EF44D4E008C2895 /* SearchRelVC */ = {
+		DA72669E1EF44D4E008C2895 /* searchvc */ = {
 			isa = PBXGroup;
 			children = (
 				DA7266C01EF44F50008C2895 /* SearchViewController.h */,
@@ -762,7 +764,7 @@
 				55196A551F01DDD100CB74B6 /* ResultsViewController.h */,
 				55196A561F01DDD100CB74B6 /* ResultsViewController.m */,
 			);
-			name = SearchRelVC;
+			name = searchvc;
 			sourceTree = "<group>";
 		};
 		DA72669F1EF44D5F008C2895 /* RecomendVC */ = {
@@ -801,6 +803,8 @@
 		DA7266A21EF44D8F008C2895 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				551A67CA1F071ADE008D3B99 /* ZLCCover.h */,
+				551A67CB1F071ADE008D3B99 /* ZLCCover.m */,
 				5577DD581EFF3ED70083AF85 /* LeftCollectionViewCell.h */,
 				5577DD591EFF3ED70083AF85 /* LeftCollectionViewCell.m */,
 				5577DD5A1EFF3ED70083AF85 /* LeftCollectionViewCell.xib */,
@@ -840,8 +844,8 @@
 				551A67D01F073CCF008D3B99 /* KeychainItemWrapper.m */,
 				DA9AE9D91EF1A866007ACA5C /* ZLCCirclePieProgressView.h */,
 				DA9AE9DA1EF1A866007ACA5C /* ZLCCirclePieProgressView.m */,
-				551A67D31F073CCF008D3B99 /* WTSudokuView.h */,
-				551A67D41F073CCF008D3B99 /* WTSudokuView.m */,
+				551A67D31F073CCF008D3B99 /* ZLCSudokuView.h */,
+				551A67D41F073CCF008D3B99 /* ZLCSudokuView.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -858,9 +862,9 @@
 			children = (
 				DA698CC31EF85239009F9CC9 /* ZLCModel.h */,
 				DA698CC41EF85239009F9CC9 /* ZLCModel.m */,
-				DA4FAFD91EF0A30600C8D343 /* pic_list */,
 				5578CE161EFB6E2E00293030 /* CatogoryModel.h */,
 				5578CE171EFB6E2E00293030 /* CatogoryModel.m */,
+				DA4FAFD91EF0A30600C8D343 /* pic_list */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -887,28 +891,11 @@
 			isa = PBXGroup;
 			children = (
 				DA7266D41EF450AA008C2895 /* GlobalMacroDefinition.h */,
+				55CBA9FA1F2D4B950097752A /* foundationvc */,
 				DA4D642C1F04163800E5FA87 /* tls */,
-				DAD0896E1F0306BF0030F3E3 /* KSPhotoBrowser */,
-				DA7267241EF4601C008C2895 /* SearchBar */,
-				DA7267231EF45FFB008C2895 /* BaseController */,
+				DAD0896E1F0306BF0030F3E3 /* photosBrowser */,
 			);
 			name = Bases;
-			sourceTree = "<group>";
-		};
-		DA7267231EF45FFB008C2895 /* BaseController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = BaseController;
-			sourceTree = "<group>";
-		};
-		DA7267241EF4601C008C2895 /* SearchBar */ = {
-			isa = PBXGroup;
-			children = (
-				551A67CA1F071ADE008D3B99 /* ZLCCover.h */,
-				551A67CB1F071ADE008D3B99 /* ZLCCover.m */,
-			);
-			name = SearchBar;
 			sourceTree = "<group>";
 		};
 		DA98B1951EF899DA008EBCB2 /* localTestSrc */ = {
@@ -930,7 +917,7 @@
 			name = "流水布局";
 			sourceTree = "<group>";
 		};
-		DAD0896E1F0306BF0030F3E3 /* KSPhotoBrowser */ = {
+		DAD0896E1F0306BF0030F3E3 /* photosBrowser */ = {
 			isa = PBXGroup;
 			children = (
 				DAD089711F0306F70030F3E3 /* KSImageManagerProtocol.h */,
@@ -947,7 +934,7 @@
 				55DF14831EEEE3FF006C5644 /* UIImage+PECrop.h */,
 				55DF14841EEEE3FF006C5644 /* UIImage+PECrop.m */,
 			);
-			name = KSPhotoBrowser;
+			name = photosBrowser;
 			sourceTree = "<group>";
 		};
 		EA82797DD917138E0873571E /* Pods */ = {
@@ -1223,7 +1210,6 @@
 				5577DD5B1EFF3ED70083AF85 /* LeftCollectionViewCell.m in Sources */,
 				559613781EEC0E0500C89DE8 /* ZLCHaleyPlugin.m in Sources */,
 				DA7266BD1EF44F21008C2895 /* BaseMainViewController.m in Sources */,
-				55F4EF8A1ED7017600317556 /* ViewController.m in Sources */,
 				55091E351EFCB4F300262536 /* DataObject.m in Sources */,
 				DA698CBD1EF85169009F9CC9 /* ZLCWaterflowLayout.m in Sources */,
 				55091E301EFCB48100262536 /* ResponseObject.m in Sources */,
@@ -1241,7 +1227,7 @@
 				55F4EF901ED7017700317556 /* SOIOEC.xcdatamodeld in Sources */,
 				DAD0897D1F0306F70030F3E3 /* KSPhotoItem.m in Sources */,
 				551A67B31F06D077008D3B99 /* EnshireImage.m in Sources */,
-				551A67DB1F073CCF008D3B99 /* WTSudokuView.m in Sources */,
+				551A67DB1F073CCF008D3B99 /* ZLCSudokuView.m in Sources */,
 				55DF14911EEEE3FF006C5644 /* UIImage+PECrop.m in Sources */,
 				55196A571F01DDD100CB74B6 /* ResultsViewController.m in Sources */,
 				55FBBFAD1EEEA4D000524290 /* UIImage+CompressImage.m in Sources */,
@@ -1259,7 +1245,7 @@
 				551A67BD1F06E559008D3B99 /* ZLCErrorAlert.m in Sources */,
 				DAD0897E1F0306F70030F3E3 /* KSPhotoView.m in Sources */,
 				55091E201EFC915E00262536 /* ValueModel.m in Sources */,
-				5578CE151EFB677000293030 /* WJItemsControlView.m in Sources */,
+				5578CE151EFB677000293030 /* ZLCItemsControlView.m in Sources */,
 				55F4EF841ED7017600317556 /* main.m in Sources */,
 				DA9AE9DB1EF1A866007ACA5C /* ZLCCirclePieProgressView.m in Sources */,
 				DA698CC11EF85210009F9CC9 /* ZLCShopCell.m in Sources */,
@@ -1295,7 +1281,7 @@
 				DA4FAFDF1EF0A36200C8D343 /* JQLabelInfo.m in Sources */,
 				5577DD671EFF3EE80083AF85 /* RightCollectionViewCell.m in Sources */,
 				55196A581F01DDD100CB74B6 /* ResultsViewController.m in Sources */,
-				551A67DC1F073CCF008D3B99 /* WTSudokuView.m in Sources */,
+				551A67DC1F073CCF008D3B99 /* ZLCSudokuView.m in Sources */,
 				551A67BE1F06E559008D3B99 /* ZLCErrorAlert.m in Sources */,
 				55FBBFAE1EEEA4D000524290 /* UIImage+CompressImage.m in Sources */,
 				55181CF01F01E09500042F40 /* ResultsCell.m in Sources */,
@@ -1341,7 +1327,7 @@
 				DA4FAFE01EF0A36200C8D343 /* JQLabelInfo.m in Sources */,
 				5577DD681EFF3EE80083AF85 /* RightCollectionViewCell.m in Sources */,
 				55196A591F01DDD100CB74B6 /* ResultsViewController.m in Sources */,
-				551A67DD1F073CCF008D3B99 /* WTSudokuView.m in Sources */,
+				551A67DD1F073CCF008D3B99 /* ZLCSudokuView.m in Sources */,
 				551A67BF1F06E559008D3B99 /* ZLCErrorAlert.m in Sources */,
 				55FBBFAF1EEEA4D000524290 /* UIImage+CompressImage.m in Sources */,
 				55181CF11F01E09500042F40 /* ResultsCell.m in Sources */,

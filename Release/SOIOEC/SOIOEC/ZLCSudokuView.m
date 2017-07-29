@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 Yorke. All rights reserved.
 //
 
-#import "WTSudokuView.h"
+#import "ZLCSudokuView.h"
 
 #define kGesturePasswordBackground @"GesturePasswordBackground.png"
 
@@ -14,7 +14,7 @@
 #define kCenterWidth 300.0f
 #define kCircleRadius ((kCenterWidth - kSpace * 6) / 6)
 
-@interface WTSudokuView ()
+@interface ZLCSudokuView ()
 
 @property(nonatomic,strong)UILabel *titleLab;
 
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation WTSudokuView
+@implementation ZLCSudokuView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if(self = [super initWithFrame:frame]) {
@@ -54,7 +54,7 @@
     [self addSubview:centerView];
     NSMutableArray *btnArray = [NSMutableArray array];
     for(int i = 0; i < 9; i++){
-        WTSudokuButton *btn = [[WTSudokuButton alloc]initWithFrame:CGRectMake(i % 3 * (kCenterWidth / 3) + kSpace,floorl(i / 3) * (kCenterWidth / 3) + kSpace, kCircleRadius * 2, kCircleRadius * 2)];
+        ZLCSudokuButton *btn = [[ZLCSudokuButton alloc]initWithFrame:CGRectMake(i % 3 * (kCenterWidth / 3) + kSpace,floorl(i / 3) * (kCenterWidth / 3) + kSpace, kCircleRadius * 2, kCircleRadius * 2)];
         btn.tag = i;
         [centerView addSubview:btn];
         [btnArray addObject:btn];
@@ -102,7 +102,7 @@
 
 @end
 
-@implementation WTSudokuButton
+@implementation ZLCSudokuButton
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if(self = [super initWithFrame:frame]){
@@ -206,7 +206,7 @@
     [_touchesArray removeAllObjects];
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
-    for(WTSudokuButton *btn in self.btnArray){
+    for(ZLCSudokuButton *btn in self.btnArray){
         if(CGRectContainsPoint(btn.frame, point)){
             btn.type = WTSudokuButtonTypeSelected;
             [_touchesArray addObject:btn];
@@ -220,7 +220,7 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:self];
-    for(WTSudokuButton *btn in self.btnArray){
+    for(ZLCSudokuButton *btn in self.btnArray){
         if(CGRectContainsPoint(btn.frame, point)){
             if([_touchesArray containsObject:btn]){
                 
@@ -237,7 +237,7 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
     NSMutableString *result = [NSMutableString string];
-    for(WTSudokuButton *btn in _touchesArray){
+    for(ZLCSudokuButton *btn in _touchesArray){
         [result appendFormat:@"%ld",btn.tag];
     }
     switch (_type) {
@@ -260,7 +260,7 @@
     if(_success){
         
     }else{
-        for(WTSudokuButton *btn in _touchesArray){
+        for(ZLCSudokuButton *btn in _touchesArray){
             [btn setType:WTSudokuButtonTypeError];
             [btn setNeedsDisplay];
         }
@@ -281,7 +281,7 @@
         
         CGContextSetLineWidth(ctx, 2);
         
-        WTSudokuButton *btn = _touchesArray[i];
+        ZLCSudokuButton *btn = _touchesArray[i];
         CGPoint point = btn.center;
         CGContextMoveToPoint(ctx, point.x, point.y);//定点
         
@@ -360,7 +360,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [_touchesArray removeAllObjects];
         _success = YES;
-        for(WTSudokuButton *btn in self.btnArray){
+        for(ZLCSudokuButton *btn in self.btnArray){
             btn.type = WTSudokuButtonTypeNormal;
             [btn setNeedsDisplay];
         }

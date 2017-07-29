@@ -42,22 +42,16 @@ typedef int(^LauncheFinishedBlock)();
     [[UMSocialManager defaultManager] setUmSocialAppkey:Umeng_AppKey];
     [self configUSharePlatforms];
     
-    
-//收藏文件夹创建
-//    [self configDefaultFolders:@[@"壁纸",@"朋友圈配图",@"其他"]];
+
     if (![self configPasswordPage]) {
         [self configTabBarPage];
     }
-    
-
-//根控制器
 
     return YES;
 }
 
 -(void)configTabBarPage
 {
-//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     ZLCTabBarController *tabBarController = [[ZLCTabBarController alloc] init];
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
@@ -90,33 +84,7 @@ typedef int(^LauncheFinishedBlock)();
 }
 
 
--(void)WZXGuideView
-{
-    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-    UIWindow        *window = delegate.window;
-    window.rootViewController = [[GuideController alloc]init];
-    [window makeKeyAndVisible];
-}
 
-
--(void)WZXLaunchView
-{
-    NSString *imgUrlString =@"http://imgstore.cdn.sogou.com/app/a/100540002/714860.jpg";
-    //  2.初始化启动页
-    [JWLaunchAd initImageWithAttribute:4.0 showSkipType:SkipShowTypeAnimation setLaunchAd:^(JWLaunchAd *launchAd) {
-        __block JWLaunchAd *weakSelf = launchAd;
-        //如果选择 SkipShowTypeAnimation 需要设置动画跳过按钮的属性
-        [weakSelf setAnimationSkipWithAttribute:[UIColor redColor] lineWidth:3.0 backgroundColor:nil textColor:nil];
-        [launchAd setWebImageWithURL:imgUrlString options:JWWebImageDefault result:^(UIImage *image, NSURL *url) {
-            //  异步缓冲图片完成后调整图片Frame
-            weakSelf.launchAdViewFrame = CGRectMake(0, 0, [APPObject defaultApp].width, [APPObject defaultApp].height-100);
-        } adClickBlock:^{
-            //  3.广告回调
-            NSString *url = @"https://www.baidu.com";
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-        }];
-    }];
-}
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
