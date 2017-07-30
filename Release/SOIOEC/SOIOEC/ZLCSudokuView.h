@@ -2,8 +2,8 @@
 //  WTSudokuView.h
 //  DirectBank
 //
-//  Created by Yorke on 14/10/31.
-//  Copyright (c) 2014年 Yorke. All rights reserved.
+//  Created by sulier_J on 2014/4/18.
+//  Copyright © 2014年 sulier_J. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

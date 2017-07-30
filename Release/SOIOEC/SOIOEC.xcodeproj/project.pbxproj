@@ -737,7 +737,6 @@
 		DA72669C1EF44B92008C2895 /* 推荐 */ = {
 			isa = PBXGroup;
 			children = (
-				DA98B1951EF899DA008EBCB2 /* localTestSrc */,
 				DA72669F1EF44D5F008C2895 /* RecomendVC */,
 				DA7266A71EF44DBD008C2895 /* Models */,
 				DA7266A31EF44D9D008C2895 /* RelViews */,
@@ -896,13 +895,6 @@
 				DAD0896E1F0306BF0030F3E3 /* photosBrowser */,
 			);
 			name = Bases;
-			sourceTree = "<group>";
-		};
-		DA98B1951EF899DA008EBCB2 /* localTestSrc */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = localTestSrc;
 			sourceTree = "<group>";
 		};
 		DA98B1B11EF89A52008EBCB2 /* 流水布局 */ = {

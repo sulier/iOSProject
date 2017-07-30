@@ -1,9 +1,9 @@
 //
 //  iPhoneRelateVersion.h
 //  SOIOEC
-//
-//  Created by Sulier_Jim on 2017/6/29.
-//  Copyright © 2017年 sulier_J. All rights reserved.
+
+//  Created by sulier_J on 2014/3/25.
+//  Copyright © 2014年 sulier_J. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
